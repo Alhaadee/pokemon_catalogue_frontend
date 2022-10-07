@@ -3,3 +3,45 @@
   display: flex;
   justify-content: space-around;
 }
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5% 10px 5%;
+}
+
+#logo {
+  width: 100px;
+}
+
+.home {
+  text-align: center;
+}
+
+.home img {
+  padding: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.pokemon-card {
+  text-align: center;
+  font-weight: bold;
+}
+
+.pokemon-card span {
+  font-weight: normal;
+  padding-left: 10px;
+}
+
+.pokemon-card ul {
+  list-style-type: none;
+}

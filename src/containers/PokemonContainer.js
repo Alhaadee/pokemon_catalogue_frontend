@@ -27,15 +27,18 @@ const PokemonContainer = () => {
     return (
         <BrowserRouter>
         <div>
+            <header>
             <h1>Pokemon Catalogue</h1>
-            <ul>
-                <li>
-                <Link to="/all-pokemon">All Pokemon</Link>
-                </li>
-                <li>
-                <Link to="/">Home</Link>
-                </li>
-            </ul>
+            <img id="logo" src="https://i.pinimg.com/736x/aa/1c/db/aa1cdbfe8df004679a291346d50803d6.jpg" alt="pokeball logo"/>
+            </header>
+
+            <nav>
+            <h3><Link to="/">Home</Link></h3>
+            <h3><Link to="/all-pokemon">All Pokemon</Link></h3>    
+            </nav>
+                
+
+            
             <Routes>
                 <Route path="/all-pokemon" element = {
                     <PokemonList pokemons={pokemons}/>
