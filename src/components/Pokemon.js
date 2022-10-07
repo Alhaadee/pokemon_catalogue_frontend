@@ -23,13 +23,13 @@ const Pokemon = () => {
 
     const image = loading ? <p>loading image</p> : <img src={pokemon["sprites"]["other"]["official-artwork"]["front_default"]} alt="pokemon"/> 
 
-    const render = loading ? <p>Loading....</p> : <p>Pokemon First Appearance: Pokemon {"" + pokemon.game_indices[0].version.name}</p>
+    // const render = loading ? <p>Loading....</p> : <p>Pokemon First Appearance: Pokemon {"" + pokemon.game_indices[0].version.name}</p>
    
     
             
     useEffect(()=>{
         fetchPokemonByName();
-    },[name])
+    })
  
 
     return (
@@ -38,7 +38,7 @@ const Pokemon = () => {
         <hr/>
         {image}
         <hr/>
-        {render}
+        {/* {render} */}
         <p>Pokemon Height(cm):<span>{pokemon.height * 10}</span></p>
         <p>Base Experience:<span>{pokemon.base_experience}</span></p>
         <h3>Abilities</h3>
