@@ -13,14 +13,34 @@ const Pokemon = () => {
     }
 
 
+    const pokemonImg = pokemon["sprites"]["other"]["official-artwork"]["front_default"];
+    
+    useEffect(()=>{
+        fetchPokemonByName();
+    })
+ 
+    
+
+
     return (
        <div>
+        <button onClick={()=>fetchPokemonByName()}>Show details</button>
         <h2>{name}</h2>
-        <p>{pokemon.base_experience}</p>
+        <p>Pokemon ID:{pokemon.id}</p>
         {/* {
             pokemon.sprites.other.home.front_default ? <img src={pokemon.sprites.other.home.front_default} alt="pokemon"/> : <p> image not found</p>
         } */}
-        <img src={pokemon.sprites.other.home.front_default} alt="pokemon"/>
+        <img src={pokemonImg} alt="pokemon"/>
+        <h3>Abilities</h3>
+        <ul>
+            {/* {
+                pokemon.abilities.map(element=>{
+                    return (
+                        <li>{element.ability.name}</li>
+                    )
+                })
+            } */}
+        </ul>
         
        </div>
     )

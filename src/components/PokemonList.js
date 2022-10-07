@@ -11,7 +11,7 @@ const PokemonList = ({pokemons}) => {
 
 
 const listItems1 = list1.map((pokemon,index)=>{
-        return ( <Link to={`/pokemon/${pokemon.name}`} key={pokemon+index} onClick={}><li>{pokemon.name}</li></Link>)
+        return ( <Link to={`/pokemon/${pokemon.name}`} key={pokemon+index} ><li>{pokemon.name}</li></Link>)
     })
 const listItems2 = list2.map((pokemon,index)=>{
         return ( <Link to={`/pokemon/${pokemon.name}`} key={pokemon+index}><li>{pokemon.name}</li></Link>)
