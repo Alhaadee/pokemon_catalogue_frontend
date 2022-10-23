@@ -7,12 +7,14 @@
 nav {
   display: flex;
   justify-content: space-evenly;
+  background-color: white;
 }
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px 5% 10px 5%;
+  background-color: white;
 }
 
 #logo {
@@ -44,4 +46,16 @@ a {
 
 .pokemon-card ul {
   list-style-type: none;
+}
+
+.list-title{
+  text-align: center;
+}
+
+body {
+  background-color: lightblue;
+}
+
+a:hover {
+  text-shadow: -.25px -.25px 0 black, .25px .25px black;
 }

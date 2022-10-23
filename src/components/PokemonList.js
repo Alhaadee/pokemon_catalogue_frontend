@@ -23,7 +23,7 @@ const listItems3 = list3.map((pokemon,index)=>{
 
 return (
     <>
-        <h2>Pokemon List</h2>
+        <h2 className="list-title">Pokemon List</h2>
         <div className="list_container">
         <ul className="list1">
             {listItems1}
